@@ -1,0 +1,91 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\RoseNgwenya\\Documents\\Tutorials\\TodoList\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C97B25F6-608A-4399-83D9-6F7280B6116A}|TodoList.csproj|c:\\users\\rosengwenya\\documents\\tutorials\\todolist\\todoitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C97B25F6-608A-4399-83D9-6F7280B6116A}|TodoList.csproj|solutionrelative:todoitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C97B25F6-608A-4399-83D9-6F7280B6116A}|TodoList.csproj|c:\\users\\rosengwenya\\documents\\tutorials\\todolist\\components\\pages\\todo.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C97B25F6-608A-4399-83D9-6F7280B6116A}|TodoList.csproj|solutionrelative:components\\pages\\todo.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C97B25F6-608A-4399-83D9-6F7280B6116A}|TodoList.csproj|c:\\users\\rosengwenya\\documents\\tutorials\\todolist\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C97B25F6-608A-4399-83D9-6F7280B6116A}|TodoList.csproj|solutionrelative:components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:135:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:139:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:138:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:136:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TodoItem.cs",
+              "DocumentMoniker": "C:\\Users\\RoseNgwenya\\Documents\\Tutorials\\TodoList\\TodoItem.cs",
+              "RelativeDocumentMoniker": "TodoItem.cs",
+              "ToolTip": "C:\\Users\\RoseNgwenya\\Documents\\Tutorials\\TodoList\\TodoItem.cs",
+              "RelativeToolTip": "TodoItem.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-11T01:38:32.517Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Todo.razor",
+              "DocumentMoniker": "C:\\Users\\RoseNgwenya\\Documents\\Tutorials\\TodoList\\Components\\Pages\\Todo.razor",
+              "RelativeDocumentMoniker": "Components\\Pages\\Todo.razor",
+              "ToolTip": "C:\\Users\\RoseNgwenya\\Documents\\Tutorials\\TodoList\\Components\\Pages\\Todo.razor",
+              "RelativeToolTip": "Components\\Pages\\Todo.razor",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA8AAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-11T01:26:48.025Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "NavMenu.razor",
+              "DocumentMoniker": "C:\\Users\\RoseNgwenya\\Documents\\Tutorials\\TodoList\\Components\\Layout\\NavMenu.razor",
+              "RelativeDocumentMoniker": "Components\\Layout\\NavMenu.razor",
+              "ToolTip": "C:\\Users\\RoseNgwenya\\Documents\\Tutorials\\TodoList\\Components\\Layout\\NavMenu.razor",
+              "RelativeToolTip": "Components\\Layout\\NavMenu.razor",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAACAAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-11T01:31:10.8Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
