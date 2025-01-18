@@ -27,3 +27,4 @@ C:\Users\RoseNgwenya\Documents\Tutorials\TodoList\obj\Debug\net8.0\refint\TodoLi
 C:\Users\RoseNgwenya\Documents\Tutorials\TodoList\obj\Debug\net8.0\TodoList.pdb
 C:\Users\RoseNgwenya\Documents\Tutorials\TodoList\obj\Debug\net8.0\TodoList.genruntimeconfig.cache
 C:\Users\RoseNgwenya\Documents\Tutorials\TodoList\obj\Debug\net8.0\ref\TodoList.dll
+C:\Users\RoseNgwenya\Documents\Tutorials\TodoList\obj\Debug\net8.0\TodoList.sourcelink.json
