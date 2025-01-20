@@ -1,15 +1,22 @@
 ﻿@page "/todo"
 @rendermode InteractiveServer
+@inject ConfettiService ConfettiService
+
+
+<link href="bootstrap/bootstrap.min.css" rel="stylesheet" />
+<link href="app.css" rel="stylesheet" />
 
 <PageTitle>Todo</PageTitle>
-
-<h3>Todo (@todos.Count(todo => !todo.IsDone))</h3>
+<div>
+<h3>New Task</h3>
 
 
 <input placeholder="Something to do" @bind="newTodo" />
-<button @onclick="AddTodo"> Add Task </button>
+<button type="button" class="btn btn-success" @onclick="AddTodo"> Add Task</button>
 
-<ul>
+
+
+<ol>
     @foreach (var todo in todos)
     {
         
@@ -18,9 +25,19 @@
          <input @bind="todo.Title" />
          </li>
     }
-</ul>
+</ol>
+
+    <h5> Completed Items: @CompletedItems()</h5>
 
 
+        @if (CompletedItems() > 3)
+        {
+            <p> You've completed more than 3 tasks! Congratulations  </p>
+        <button @ref=button class="btn btn-primary" @onclick="Activate">Click Me!🎉</button>
+        }
+
+
+</div>
 
 @code {
     private List<TodoItem> todos = new();
@@ -34,5 +51,38 @@
             todos.Add(new TodoItem { Title = newTodo });
             newTodo = string.Empty;
         }
+
+    }
+
+    private int CompletedItems()
+    {
+        var CompleteTaskCount = @todos.Count(todo => todo.IsDone);
+
+        if(CompleteTaskCount > 3)
+        {
+            Console.WriteLine("More than 3 tasks completed");
+        }
+
+
+        
+        return CompleteTaskCount;
+
+    }
+
+    private ElementReference button;
+
+    private void Activate()
+    {
+        ConfettiOptions options = new()
+            {
+                Colors = ["silver", "gold", "red", "blue", "green"],
+                Pieces = 900,
+                Mode = ConfettiOriginMode.FromElement,
+                Origin = button,
+                Milliseconds = 2000,
+                VariationInMilliseconds = 500
+            };
+
+            ConfettiService.Activate(options);
     }
 }

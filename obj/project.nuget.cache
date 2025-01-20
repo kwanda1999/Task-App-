@@ -1,8 +1,26 @@
 {
   "version": 2,
-  "dgSpecHash": "mDWB3A3tLtWb7FMY3gs4QdEbiUnJIrJ/sxY0dHozMQO4C3bZyKqnVmyEmunbvn4yVYIMCHOnhzQMES4+GLhRtw==",
+  "dgSpecHash": "6vZeVq98IhJsXZqe8V2URMc3iCQUF+Yfg6vtWFCar+o0TT5R8MKp21opdJTzsi4LJlGlnbzBNGjyVvy/1/NIOA==",
   "success": true,
   "projectFilePath": "C:\\Users\\RoseNgwenya\\Documents\\Tutorials\\TodoList\\TodoList.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\RoseNgwenya\\.nuget\\packages\\kristofferstrube.blazor.confetti\\0.2.1\\kristofferstrube.blazor.confetti.0.2.1.nupkg.sha512",
+    "C:\\Users\\RoseNgwenya\\.nuget\\packages\\kristofferstrube.blazor.dom\\0.1.1\\kristofferstrube.blazor.dom.0.1.1.nupkg.sha512",
+    "C:\\Users\\RoseNgwenya\\.nuget\\packages\\kristofferstrube.blazor.svganimation\\0.2.0\\kristofferstrube.blazor.svganimation.0.2.0.nupkg.sha512",
+    "C:\\Users\\RoseNgwenya\\.nuget\\packages\\kristofferstrube.blazor.webidl\\0.1.0\\kristofferstrube.blazor.webidl.0.1.0.nupkg.sha512",
+    "C:\\Users\\RoseNgwenya\\.nuget\\packages\\microsoft.aspnetcore.authorization\\8.0.0\\microsoft.aspnetcore.authorization.8.0.0.nupkg.sha512",
+    "C:\\Users\\RoseNgwenya\\.nuget\\packages\\microsoft.aspnetcore.components\\8.0.0\\microsoft.aspnetcore.components.8.0.0.nupkg.sha512",
+    "C:\\Users\\RoseNgwenya\\.nuget\\packages\\microsoft.aspnetcore.components.analyzers\\8.0.0\\microsoft.aspnetcore.components.analyzers.8.0.0.nupkg.sha512",
+    "C:\\Users\\RoseNgwenya\\.nuget\\packages\\microsoft.aspnetcore.components.forms\\8.0.0\\microsoft.aspnetcore.components.forms.8.0.0.nupkg.sha512",
+    "C:\\Users\\RoseNgwenya\\.nuget\\packages\\microsoft.aspnetcore.components.web\\8.0.0\\microsoft.aspnetcore.components.web.8.0.0.nupkg.sha512",
+    "C:\\Users\\RoseNgwenya\\.nuget\\packages\\microsoft.aspnetcore.metadata\\8.0.0\\microsoft.aspnetcore.metadata.8.0.0.nupkg.sha512",
+    "C:\\Users\\RoseNgwenya\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\8.0.0\\microsoft.extensions.dependencyinjection.8.0.0.nupkg.sha512",
+    "C:\\Users\\RoseNgwenya\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\RoseNgwenya\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.0\\microsoft.extensions.logging.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\RoseNgwenya\\.nuget\\packages\\microsoft.extensions.options\\8.0.0\\microsoft.extensions.options.8.0.0.nupkg.sha512",
+    "C:\\Users\\RoseNgwenya\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512",
+    "C:\\Users\\RoseNgwenya\\.nuget\\packages\\microsoft.jsinterop\\8.0.0\\microsoft.jsinterop.8.0.0.nupkg.sha512",
+    "C:\\Users\\RoseNgwenya\\.nuget\\packages\\system.io.pipelines\\8.0.0\\system.io.pipelines.8.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

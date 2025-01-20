@@ -1,5 +1,9 @@
+/* First, import Raleway from Google Fonts at the top of your CSS file */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap');
+
+/* Then modify your font-family declaration */
 html, body {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 a, .btn-link {

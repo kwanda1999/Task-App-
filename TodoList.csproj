@@ -6,4 +6,9 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="KristofferStrube.Blazor.Confetti" Version="0.2.1" />
+    <PackageReference Include="KristofferStrube.Blazor.SVGAnimation" Version="0.2.0" />
+  </ItemGroup>
+
 </Project>

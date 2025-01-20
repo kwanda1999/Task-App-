@@ -1,10 +1,14 @@
 using TodoList.Components;
+using KristofferStrube.Blazor.Confetti;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
+
+//Adding confetti service
+builder.Services.AddConfettiService();
 
 var app = builder.Build();
 

@@ -28,3 +28,9 @@ C:\Users\RoseNgwenya\Documents\Tutorials\TodoList\obj\Debug\net8.0\TodoList.pdb
 C:\Users\RoseNgwenya\Documents\Tutorials\TodoList\obj\Debug\net8.0\TodoList.genruntimeconfig.cache
 C:\Users\RoseNgwenya\Documents\Tutorials\TodoList\obj\Debug\net8.0\ref\TodoList.dll
 C:\Users\RoseNgwenya\Documents\Tutorials\TodoList\obj\Debug\net8.0\TodoList.sourcelink.json
+C:\Users\RoseNgwenya\Documents\Tutorials\TodoList\bin\Debug\net8.0\KristofferStrube.Blazor.Confetti.dll
+C:\Users\RoseNgwenya\Documents\Tutorials\TodoList\bin\Debug\net8.0\KristofferStrube.Blazor.DOM.dll
+C:\Users\RoseNgwenya\Documents\Tutorials\TodoList\bin\Debug\net8.0\KristofferStrube.Blazor.SVGAnimation.dll
+C:\Users\RoseNgwenya\Documents\Tutorials\TodoList\bin\Debug\net8.0\KristofferStrube.Blazor.WebIDL.dll
+C:\Users\RoseNgwenya\Documents\Tutorials\TodoList\obj\Debug\net8.0\TodoList.csproj.AssemblyReference.cache
+C:\Users\RoseNgwenya\Documents\Tutorials\TodoList\obj\Debug\net8.0\TodoList.csproj.Up2Date

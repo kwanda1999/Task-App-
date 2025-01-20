@@ -12,4 +12,9 @@
   <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <SourceRoot Include="C:\Users\RoseNgwenya\.nuget\packages\" />
   </ItemGroup>
+  <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)kristofferstrube.blazor.webidl\0.1.0\buildTransitive\KristofferStrube.Blazor.WebIDL.props" Condition="Exists('$(NuGetPackageRoot)kristofferstrube.blazor.webidl\0.1.0\buildTransitive\KristofferStrube.Blazor.WebIDL.props')" />
+    <Import Project="$(NuGetPackageRoot)kristofferstrube.blazor.dom\0.1.1\buildTransitive\KristofferStrube.Blazor.DOM.props" Condition="Exists('$(NuGetPackageRoot)kristofferstrube.blazor.dom\0.1.1\buildTransitive\KristofferStrube.Blazor.DOM.props')" />
+    <Import Project="$(NuGetPackageRoot)kristofferstrube.blazor.svganimation\0.2.0\buildTransitive\KristofferStrube.Blazor.SVGAnimation.props" Condition="Exists('$(NuGetPackageRoot)kristofferstrube.blazor.svganimation\0.2.0\buildTransitive\KristofferStrube.Blazor.SVGAnimation.props')" />
+  </ImportGroup>
 </Project>
