@@ -6,36 +6,44 @@
 <link href="bootstrap/bootstrap.min.css" rel="stylesheet" />
 <link href="app.css" rel="stylesheet" />
 
-<PageTitle>Todo</PageTitle>
+<PageTitle>ClearList</PageTitle>
 <div>
+
+
+<span class="logo-name"> ClearList </span>
 <h3>New Task</h3>
 
 
-<input placeholder="Something to do" @bind="newTodo" />
-<button type="button" class="btn btn-success" @onclick="AddTodo"> Add Task</button>
+<input  class="task-input" placeholder="Add A New Task" @bind="newTodo" />
+<button type="button" class="custom-button" @onclick="AddTodo"> Add Task</button>
 
 
+  <h4> Tasks </h4>
 
-<ol>
-    @foreach (var todo in todos)
-    {
-        
-        <li>
-         <input type="checkbox" @bind="todo.IsDone" />
-         <input @bind="todo.Title" />
-         </li>
-    }
-</ol>
-
-    <h5> Completed Items: @CompletedItems()</h5>
+     <h5> Completed Items: @CompletedItems()</h5>
 
 
         @if (CompletedItems() > 3)
         {
             <p> You've completed more than 3 tasks! Congratulations  </p>
-        <button @ref=button class="btn btn-primary" @onclick="Activate">Click Me!🎉</button>
         }
 
+<ol>
+    @foreach (var todo in todos)
+    {
+        <div class="task">
+        <li>
+         <input class="task-box" type="checkbox" @bind="todo.IsDone" />
+         <input class="task-item" @bind="todo.Title" />
+         </li>
+         </div>
+    }
+</ol>
+
+  
+
+ 
+ 
 
 </div>
 

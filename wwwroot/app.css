@@ -1,10 +1,16 @@
 /* First, import Raleway from Google Fonts at the top of your CSS file */
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Darker+Grotesque:wght@300..900&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Phetsarath&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* Then modify your font-family declaration */
 html, body {
-    font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: "Instrument Sans";
+    background-color: #ddedf4;
+    color: #171C25; /* Ensures text remains readable */
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Ensures full coverage */
 }
+
 
 a, .btn-link {
     color: #006bb7;
@@ -52,4 +58,44 @@ h1:focus {
 
 .darker-border-checkbox.form-check-input {
     border-color: #929292;
+}
+
+
+.logo-name{
+    font-weight: 900;
+    font-size: 50px;
+    margin-bottom: 40px;
+}
+
+.task-input{
+    width: 500px;
+    margin-top: 10px;
+    height: 40px;
+    margin-bottom: 30px;
+    background: transparent;
+    border-radius: 8px;
+    border-width: 1px;;
+}
+
+.task{
+    margin-top: 10px;
+}
+
+.task-item{
+    background: transparent;
+    border-radius: 8px;
+    border: transparent;
+}
+
+.task-box {
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
+.custom-button{
+    padding: 6px;
+    border-radius: 8px;
+    border: transparent;
+    color: #ddedf4;
+    background-color: #171C25;
 }
