@@ -85,6 +85,7 @@ h1:focus {
     background: transparent;
     border-radius: 8px;
     border: transparent;
+    width: auto;
 }
 
 .task-box {

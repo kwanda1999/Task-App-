@@ -5,41 +5,60 @@
 
 <link href="bootstrap/bootstrap.min.css" rel="stylesheet" />
 <link href="app.css" rel="stylesheet" />
+<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 
 <PageTitle>ClearList</PageTitle>
 <div>
 
 
-<span class="logo-name"> ClearList </span>
-<h3>New Task</h3>
 
 
-<input  class="task-input" placeholder="Add A New Task" @bind="newTodo" />
-<button type="button" class="custom-button" @onclick="AddTodo"> Add Task</button>
+<div>
+    <div class="row align-items-center">
+        <div class="col">
+
+                <span class="logo-name"> ClearList </span>
+                <h3>New Task</h3>
 
 
-  <h4> Tasks </h4>
+                <input class="task-input" @bind="newTodoTitle" placeholder="Enter task title" />
 
-     <h5> Completed Items: @CompletedItems()</h5>
+                <input class="task-input" @bind="newTodoDescription" placeholder="Enter task descripiton" />
+                <button type="button" class="custom-button" @onclick="AddTodo"> Add Task</button>
 
 
-        @if (CompletedItems() > 3)
-        {
-            <p> You've completed more than 3 tasks! Congratulations  </p>
-        }
+        </div>
+        <div class="col">
 
-<ol>
-    @foreach (var todo in todos)
-    {
-        <div class="task">
-        <li>
-         <input class="task-box" type="checkbox" @bind="todo.IsDone" />
-         <input class="task-item" @bind="todo.Title" />
-         </li>
-         </div>
-    }
-</ol>
+                <h4> Tasks </h4>
 
+                <h5> Completed Items: @CompletedItems()</h5>
+
+
+                @if (CompletedItems() > 3)
+                {
+                    <p> You've completed more than 3 tasks! Congratulations  </p>
+                }
+
+                <ol>
+                    @foreach (var todo in todos)
+                    {
+                        <div class="task">
+                        <li>
+                            <input class="task-box" type="checkbox" @bind="todo.IsDone" />
+                            <input class="task-item" @bind="todo.Title" />
+                            <input class="task-item" @bind="todo.Description" />
+                            <button class="btn" @onclick="() => RemoveTodo(todo.Title)">
+                                <i class="fa fa-trash" aria-hidden="true"></i>
+                                delete
+                            </button>
+                        </li>
+                </div>
+                    }
+            </ol>
+        </div>
+    </div>
+</div>
   
 
  
@@ -50,17 +69,35 @@
 @code {
     private List<TodoItem> todos = new();
 
-    private string? newTodo;
+    private string? newTodoTitle;
 
+    private string? newTodoDescription;
+
+    //Adding a task
     private void AddTodo()
     {
-        if (!string.IsNullOrWhiteSpace(newTodo))
+        if (!string.IsNullOrWhiteSpace(newTodoTitle) && !string.IsNullOrWhiteSpace(newTodoDescription))
         {
-            todos.Add(new TodoItem { Title = newTodo });
-            newTodo = string.Empty;
+            todos.Add(new TodoItem { Title = newTodoTitle, Description = newTodoDescription });
+
+            newTodoTitle = string.Empty;
+            newTodoDescription = string.Empty;
         }
 
     }
+
+    //Removing a task
+
+    private void RemoveTodo(string title)
+    {
+        var todoToRemove = todos.FirstOrDefault(t => t.Title == title );
+        if (todoToRemove != null)
+        {
+            todos.Remove(todoToRemove);
+        }
+    }
+
+
 
     private int CompletedItems()
     {
