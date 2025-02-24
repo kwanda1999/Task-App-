@@ -5,7 +5,7 @@
 
 <link href="bootstrap/bootstrap.min.css" rel="stylesheet" />
 <link href="app.css" rel="stylesheet" />
-<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
 <PageTitle>ClearList</PageTitle>
 <div>
@@ -22,7 +22,12 @@
 
 
                 <input class="task-input" @bind="newTodoTitle" placeholder="Enter task title" />
-
+                <select class="task-input" @bind="selectedCategory">
+                    @foreach (var category in TodoCategories.GetAllCategories())
+                    {
+                        <option value="@category">@category</option>
+                    }
+                </select>
                 <input class="task-input" @bind="newTodoDescription" placeholder="Enter task descripiton" />
                 <button type="button" class="custom-button" @onclick="AddTodo"> Add Task</button>
 
@@ -46,12 +51,13 @@
                         <div class="task">
                         <li>
                             <input class="task-box" type="checkbox" @bind="todo.IsDone" />
-                            <input class="task-item" @bind="todo.Title" />
-                            <input class="task-item" @bind="todo.Description" />
-                            <button class="btn" @onclick="() => RemoveTodo(todo.Title)">
-                                <i class="fa fa-trash" aria-hidden="true"></i>
-                                delete
-                            </button>
+                            <input class="task-item" @bind="todo.Title" />  
+                            <p> <strong> Category: </strong>@todo.Category</p>
+                            <strong> Description: </strong>
+                            <input class="task-description" @bind="todo.Description" />
+                            <a class="btn" @onclick="() => RemoveTodo(todo.Title)">
+                                <i class="fa fa-trash" aria-hidden="true" style="color: red;"></i>
+                            </a>
                         </li>
                 </div>
                     }
@@ -73,15 +79,20 @@
 
     private string? newTodoDescription;
 
+    private string selectedCategory = TodoCategories.Work; //This is the default category I have set
+
     //Adding a task
     private void AddTodo()
     {
         if (!string.IsNullOrWhiteSpace(newTodoTitle) && !string.IsNullOrWhiteSpace(newTodoDescription))
         {
-            todos.Add(new TodoItem { Title = newTodoTitle, Description = newTodoDescription });
+            todos.Add(new TodoItem { Title = newTodoTitle, Description = newTodoDescription, Category = selectedCategory });
 
+
+            //resetting after the addition of a task
             newTodoTitle = string.Empty;
             newTodoDescription = string.Empty;
+            selectedCategory = TodoCategories.Work; 
         }
 
     }
@@ -96,7 +107,6 @@
             todos.Remove(todoToRemove);
         }
     }
-
 
 
     private int CompletedItems()

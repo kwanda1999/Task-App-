@@ -5,14 +5,6 @@
       "PackagePath": "staticwebassets\\TodoList.bundle.scp.css"
     },
     {
-      "Id": "C:\\Users\\RoseNgwenya\\Documents\\Tutorials\\TodoList\\wwwroot\\Images\\Group 4 (1).png",
-      "PackagePath": "staticwebassets\\Images\\Group 4 (1).png"
-    },
-    {
-      "Id": "C:\\Users\\RoseNgwenya\\Documents\\Tutorials\\TodoList\\wwwroot\\Images\\logo.png",
-      "PackagePath": "staticwebassets\\Images\\logo.png"
-    },
-    {
       "Id": "C:\\Users\\RoseNgwenya\\Documents\\Tutorials\\TodoList\\wwwroot\\app.css",
       "PackagePath": "staticwebassets\\app.css"
     },

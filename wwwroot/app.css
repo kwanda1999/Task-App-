@@ -4,7 +4,7 @@
 /* Then modify your font-family declaration */
 html, body {
     font-family: "Instrument Sans";
-    background-color: #ddedf4;
+    background-color: white;
     color: #171C25; /* Ensures text remains readable */
     margin: 0;
     padding: 0;
@@ -93,10 +93,18 @@ h1:focus {
     margin-right: 5px;
 }
 
-.custom-button{
+.custom-button {
     padding: 6px;
     border-radius: 8px;
     border: transparent;
-    color: #ddedf4;
-    background-color: #171C25;
+    color: white;
+    background-color: #282828;
+}
+
+.task-description {
+    background: transparent;
+    border-radius: 8px;
+    border: transparent;
+    width: 500px;
+    height:auto;
 }

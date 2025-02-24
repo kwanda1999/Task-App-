@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "H8UQWYdWPWZNBpr/bmHwLFJm+gBJ7zVuRoGgW4DlQNo=",
+  "Hash": "36xPwtDdSZ6wwsYtx9XBjkEAR5CHeH/m8MLYhMvd7Nw=",
   "Source": "TodoList",
   "BasePath": "_content/TodoList",
   "Mode": "Default",
@@ -186,44 +186,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.png"
-    },
-    {
-      "Identity": "C:\\Users\\RoseNgwenya\\Documents\\Tutorials\\TodoList\\wwwroot\\Images\\Group 4 (1).png",
-      "SourceId": "TodoList",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\RoseNgwenya\\Documents\\Tutorials\\TodoList\\wwwroot\\",
-      "BasePath": "_content/TodoList",
-      "RelativePath": "Images/Group 4 (1).png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Images\\Group 4 (1).png"
-    },
-    {
-      "Identity": "C:\\Users\\RoseNgwenya\\Documents\\Tutorials\\TodoList\\wwwroot\\Images\\logo.png",
-      "SourceId": "TodoList",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\RoseNgwenya\\Documents\\Tutorials\\TodoList\\wwwroot\\",
-      "BasePath": "_content/TodoList",
-      "RelativePath": "Images/logo.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Images\\logo.png"
     }
   ]
 }
