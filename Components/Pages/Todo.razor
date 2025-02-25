@@ -28,6 +28,13 @@
                         <option value="@category">@category</option>
                     }
                 </select>
+                <select class="task-input" @bind="selectedPriority">
+                    @foreach (var priority in PriorityTypes.GetAllPriorityTypes())
+                    {
+                        <option value="@priority"> @priority </option>
+                    }
+
+                </select>
                 <input class="task-input" @bind="newTodoDescription" placeholder="Enter task descripiton" />
                 <button type="button" class="custom-button" @onclick="AddTodo"> Add Task</button>
 
@@ -53,6 +60,8 @@
                             <input class="task-box" type="checkbox" @bind="todo.IsDone" />
                             <input class="task-item" @bind="todo.Title" />  
                             <p> <strong> Category: </strong>@todo.Category</p>
+                          
+                            <p> <strong> Priority: </strong>@todo.Priority</p>
                             <strong> Description: </strong>
                             <input class="task-description" @bind="todo.Description" />
                             <a class="btn" @onclick="() => RemoveTodo(todo.Title)">
@@ -81,18 +90,21 @@
 
     private string selectedCategory = TodoCategories.Work; //This is the default category I have set
 
+    private string selectedPriority = PriorityTypes.Urgent;
+
     //Adding a task
     private void AddTodo()
     {
         if (!string.IsNullOrWhiteSpace(newTodoTitle) && !string.IsNullOrWhiteSpace(newTodoDescription))
         {
-            todos.Add(new TodoItem { Title = newTodoTitle, Description = newTodoDescription, Category = selectedCategory });
+            todos.Add(new TodoItem { Title = newTodoTitle, Description = newTodoDescription, Category = selectedCategory, Priority = selectedPriority });
 
 
             //resetting after the addition of a task
             newTodoTitle = string.Empty;
             newTodoDescription = string.Empty;
-            selectedCategory = TodoCategories.Work; 
+            selectedCategory = TodoCategories.Work;
+            selectedPriority = PriorityTypes.Urgent;
         }
 
     }
